@@ -369,28 +369,3 @@ Fork the repositoryCreate your feature branch (`git checkout -b feature/amazing-
 ## License
 
 MIT License - see [LICENSE](LICENSE) file for details.
-
-## Setup for Publishing
-
-To publish this package:
-
-Replace `YOURUSERNAME` with your GitHub username in:`go.mod``main.go`All files in `examples/`This README
-
-Create a GitHub repository named `url-expander`
-
-Push your code:   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit"
-   git remote add origin https://github.com/YOURUSERNAME/url-expander.git
-   git push -u origin main
-   ```
-
-Create a release tag:   ```bash
-   git tag v1.0.0
-   git push origin v1.0.0
-   ```
-
-Users can then install via:   ```bash
-   go get github.com/YOURUSERNAME/url-expander@latest
-   ```
